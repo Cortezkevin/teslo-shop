@@ -30,11 +30,14 @@ const LoginPage: NextPage = () => {
 
 	const onLoginUser = async ( { email, password }: FormData ) => {
 		setShowError(false);
-		signIn('credentials', { 
+		/* signIn('credentials', { 
 			email, password,
 			redirect: true, 
-			callbackUrl: query.prevPage as string || '/' 
-		});	
+			callbackUrl: query.prevPage as string || '/'
+		});	 */
+		signIn('credentials', {
+			email, password
+		});
 	}
 	
   return (
