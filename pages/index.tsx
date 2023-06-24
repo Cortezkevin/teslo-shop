@@ -3,6 +3,7 @@ import { ProductList } from "@/components/products";
 import { FullScreenLoading } from "@/components/ui";
 import { useProducts } from "@/hooks";
 import { Typography } from "@mui/material";
+
 export default function HomePage() {
 
   const { products, isError, isLoading } = useProducts('/products');
