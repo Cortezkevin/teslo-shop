@@ -23,9 +23,11 @@ const LoginPage: NextPage = () => {
 	const [providers, setProviders] = useState<any>({});
 
 	useEffect(() => {
-		getProviders().then( prov => {
-			setProviders( prov );
-		});
+		(async() => {
+			await getProviders().then( prov => {
+				setProviders( prov );
+			});
+		})();
 	}, []);
 
 	const onLoginUser = async ( { email, password }: FormData ) => {
