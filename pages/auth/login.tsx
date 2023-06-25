@@ -147,6 +147,8 @@ const LoginPage: NextPage = () => {
 export const getServerSideProps: GetServerSideProps = async ({ req, query }) => {
 
 	const session = await getSession({ req });
+	console.log("SESSION DE USUARIO", session);
+	console.log("TIENE SESSION: ", session !== null);
 	const { prevPage = '/' } = query;
 
 	if( session ) {
