@@ -49,14 +49,14 @@ const LoginPage: NextPage = () => {
 					<Grid container spacing={2}>
 						<Grid item xs={ 12 }>
 							<Typography variant='h1' component='h1'>Login</Typography>
-							<Chip
+							{/* <Chip
 								label='Invalid Credentials'
 								variant='outlined'
 								icon={ <ErrorOutline /> }
 								className='fadeIn'
 								color='error'
 								sx={{ display: showError ? 'flex' : 'none'}}
-							/>
+							/> */}
 						</Grid>
 						<Grid item xs={ 12 }>
 							<TextField
